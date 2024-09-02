@@ -32,5 +32,3 @@ while opt != 7:
             q.peek_head()
         case 6:
             q.peek_tail()
-        case 7:
-            break
