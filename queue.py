@@ -29,7 +29,7 @@ class Queue:
         if not Queue.empty(self):
             print(f'Tail: {self.data[Queue.size(self) - 1]}')
 
-            return
+            return None
 
         print('\npeek_tail(): empty queue error')
 
@@ -37,6 +37,6 @@ class Queue:
         if not Queue.empty(self):
             print(f'Head: {self.data[0]}')
 
-            return
+            return None
 
         print('\npeek_head(): empty queue error')
