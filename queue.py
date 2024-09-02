@@ -1,23 +1,23 @@
 class Queue:
-    def __init__(self) -> None:
+    def __init__(self):
         self.data = []
 
-    def enqueue(self, val) -> None:
+    def enqueue(self, val):
         self.data.append(val)
 
-    def empty(self) -> bool:
+    def empty(self):
         return self.data == []
 
-    def dequeue(self) -> int:
+    def dequeue(self):
         if not Queue.empty(self):
             return self.data.pop(0)
 
         print('\ndequeue(): empty queue error')
 
-    def size(self) -> int:
+    def size(self):
         return len(self.data)
 
-    def print_queue(self) -> None:
+    def print_queue(self):
         print('\nQueue: ', end = '')
 
         for value in self.data:
@@ -25,7 +25,7 @@ class Queue:
         
         print('\n')
 
-    def peek_tail(self) -> None:
+    def peek_tail(self):
         if not Queue.empty(self):
             print(f'Tail: {self.data[Queue.size(self) - 1]}')
 
@@ -33,7 +33,7 @@ class Queue:
 
         print('\npeek_tail(): empty queue error')
 
-    def peek_head(self) -> None:
+    def peek_head(self):
         if not Queue.empty(self):
             print(f'Head: {self.data[0]}')
 
