@@ -1,4 +1,4 @@
-from queue import Queue
+from my_queue import Queue
 
 if __name__ == '__main__':
     opt = 0
@@ -20,16 +20,16 @@ if __name__ == '__main__':
 
         match opt:
             case 1:
-                val = int(input('\nInput value to enqueue: '))
+                val = input('\nInput value for the enqueue() function: ')
 
                 q.enqueue(val)
             case 2:
                 q.dequeue()
             case 3:
-                print(f'Size: {q.size()}')
+                print(f'Size: {q.get_size()}')
             case 4:
                 print(f'Empty: {q.empty()}')
             case 5:
-                q.peek_head()
+                print(f'Head: {q.peek_head()}')
             case 6:
-                q.peek_tail()
+                print(f'Tail: {q.peek_tail()}')
